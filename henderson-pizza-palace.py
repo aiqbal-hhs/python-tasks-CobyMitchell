@@ -70,12 +70,18 @@ while order_pizza:
 #Information Confirmation
     print("Would You Like Your Order Picked Up At Our Store or Delievered To Your Location?")
 pickup_delievery=input("Please Select [Pickup] or [Delievery]:")
-if pickup_delievery == "Pickup" or "pickup":                  
-    print(f"\nYour total order price is: ${sum(sub_total)}")
-if pickup_delievery == "Delievery" or "delievery":
+if pickup_delievery == "Delievery" or "delievery":                  
     print(f"\nYour total order price is: ${sum(sub_total)} + $3 (For Delievery Cost)")
 else:
-    print("That Is An Invalid Option")
+    print(f"\nYour total order price is: ${sum(sub_total)}")
+
+if pickup_delievery == "Delievery" or "delievery":                  
+    print("Your Order Will Be Delievered To You ASAP")
+else:
+    print()
+
+
+
 
 print("Before We Finalize Your Order We Need Your Name, Address and Phone Number:")
 customer_adress['name'] = input("What Is Your Name?")
@@ -84,8 +90,6 @@ customer_adress['postalcode'] = input("What Is Your Postal Code and City?")
 customer_adress['phonenumber'] = input("What Is Your Phone Number?")
 print()
 print(f"Thank You For Your Order {customer_adress['name']}.")
-print()
-print("Your Order Will Be Delievered To You ASAP")
 print()
 print(customer_adress['street_name'])
 print(customer_adress['postalcode'])
