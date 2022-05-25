@@ -72,13 +72,8 @@ while order_pizza:
 pickup_delievery=input("Please Select [Pickup] or [Delievery]:")
 if pickup_delievery == "Delievery" or "delievery":                  
     print(f"\nYour total order price is: ${sum(sub_total)} + $3 (For Delievery Cost)")
-else:
+elif pickup_delievery == "pickup" or "Pickup":
     print(f"\nYour total order price is: ${sum(sub_total)}")
-
-if pickup_delievery == "Delievery" or "delievery":                  
-    print("Your Order Will Be Delievered To You ASAP")
-else:
-    print()
 
 
 
@@ -94,5 +89,6 @@ print()
 print(customer_adress['street_name'])
 print(customer_adress['postalcode'])
 print()
-print(f"Our Team Will Contact Your For Any Inconvinence Of Your Order via {customer_adress['phonenumber']} If Anything Comes Up.")   
+print(f"Our Team Will Contact Your For Any Inconvinence Of Your Order via {customer_adress['phonenumber']} If Anything Comes Up.")
+print()
     
